@@ -1,0 +1,476 @@
+{
+  "config": {
+    "configFile": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/playwright.config.ts",
+    "rootDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/preetivijaywargiya/Documents/Study Material/Playwright/HealWithPlaywright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:06.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-bf0a6809d08049d215bd",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:08.184Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-59b1dad9ba65167f9047",
+          "file": "login.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid locator, healing with AI healing)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2944,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Trying original selector: #login-button-invalid\n"
+                    },
+                    {
+                      "text": "[HEALER] Trying heuristic healing for \"#login-button-invalid\"\n"
+                    },
+                    {
+                      "text": "[HEALER] Heuristic extracted tokens: login, button, invalid\n"
+                    },
+                    {
+                      "text": "[HEALER] Heuristic found \"#login-button\"\n"
+                    },
+                    {
+                      "text": "[CACHE] Saved 1 entries\n"
+                    },
+                    {
+                      "text": "Using healed selector: #login-button\n"
+                    },
+                    {
+                      "text": "Healed selector matches 1 element(s).\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Original selector \"#login-button-invalid\" failed — attempting healer\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:09.179Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-bc642633733f66948771",
+          "file": "login.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "Login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:12.713Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-c64e21cf7c523f725dc6",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:17.046Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-9fbf3cf703e9ca866840",
+          "file": "login.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid locator, healing with AI healing)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3050,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Trying original selector: #login-button-invalid\n"
+                    },
+                    {
+                      "text": "[HEALER] Using cached selector: #login-button\n"
+                    },
+                    {
+                      "text": "Using healed selector: #login-button\n"
+                    },
+                    {
+                      "text": "Healed selector matches 1 element(s).\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Original selector \"#login-button-invalid\" failed — attempting healer\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:17.971Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-4d7dbf315b544749060c",
+          "file": "login.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "Login with valid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1728,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:22.192Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-38a3ff7c489f5df366c9",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1142,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:24.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-3a0a74c2aa57639b4e69",
+          "file": "login.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Login with invalid locator, healing with AI healing)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3243,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Trying original selector: #login-button-invalid\n"
+                    },
+                    {
+                      "text": "[HEALER] Using cached selector: #login-button\n"
+                    },
+                    {
+                      "text": "Using healed selector: #login-button\n"
+                    },
+                    {
+                      "text": "Healed selector matches 1 element(s).\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "Original selector \"#login-button-invalid\" failed — attempting healer\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2025-11-09T21:28:25.972Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-e9f108573597a8e556b3",
+          "file": "login.spec.ts",
+          "line": 30,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-09T21:28:05.633Z",
+    "duration": 23640.204,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

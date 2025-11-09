@@ -1,0 +1,7 @@
+{
+  "#login-button-invalid": {
+    "healed": "#login-button",
+    "source": "heuristic",
+    "ts": "2025-11-09T21:28:11.956Z"
+  }
+}
