@@ -1,5 +1,6 @@
 # Playwright
 .env
+healed-locators.json
 /test-results/
 /playwright-report/
 /playwright/.cache/
